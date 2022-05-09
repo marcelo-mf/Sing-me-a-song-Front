@@ -31,6 +31,7 @@ export default function Home() {
 
   return (
     <>
+      <div id="recommendations">
       <CreateNewRecommendation disabled={loadingCreatingRecommendation} onCreateNewRecommendation={handleCreateRecommendation} />
       {
         recommendations.map(recommendation => (
@@ -48,6 +49,7 @@ export default function Home() {
           <div>No recommendations yet! Create your own :)</div>
         )
       }
+      </div>
     </>
   )
 }
